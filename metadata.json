@@ -1,0 +1,8 @@
+{
+  "name": "Yury Malaver - Haute Couture & AI Beauty",
+  "description": "A luxury beauty salon landing page featuring AI-powered style consultations and an integrated reservation system.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

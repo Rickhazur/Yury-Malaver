@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yury Malaver | Haute Couture & Beauty</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'serif'],
+              sans: ['"Montserrat"', 'sans-serif'],
+            },
+            colors: {
+              gold: {
+                100: '#F9F1D8',
+                200: '#EFE0AA',
+                300: '#E5CE7C',
+                400: '#DABC4E',
+                500: '#D4AF37',
+                600: '#AA8C2C',
+                700: '#806921',
+              },
+              rose: {
+                50: '#FFF1F2',
+                100: '#FFE4E6',
+                200: '#FECDD3',
+                300: '#FDA4AF',
+                400: '#FB7185',
+                900: '#881337',
+                950: '#4C0519',
+              },
+              cream: {
+                50: '#FDFAF6',
+                100: '#F7F2EB',
+              }
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'shimmer': 'shimmer 15s linear infinite',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              shimmer: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+
+    <style>
+      body {
+        background-color: #FDFAF6;
+        color: #44403C;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+      }
+      .gold-text-gradient {
+        background: linear-gradient(to right, #D4AF37, #AA8C2C);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+        "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+        "firebase/app": "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js",
+        "firebase/firestore": "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js",
+        "firebase/": "https://aistudiocdn.com/firebase@^12.6.0/"
+      }
+    }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- 🔥 AQUÍ REEMPLAZAMOS LA IMAGEN -->
+    <section class="p-6">
+      <img 
+        src="https://yury-malaver-haute-couture-ai-beauty-718799265955.us-west1.run.app"
+        alt="Diseño Capilar Couture - Peinado exclusivo"
+        class="w-full h-[480px] object-cover rounded-xl shadow-xl"
+      />
+
+      <div class="mt-6">
+        <h2 class="text-4xl font-serif gold-text-gradient">Diseño Capilar Couture</h2>
+        <p class="mt-2 text-lg text-rose-950">
+          Tendencias globales y cortes de precisión que definen tu estilo. Desde Bobs italianos hasta capas texturizadas que transforman tu presencia.
+        </p>
+      </div>
+    </section>
+
+  </body>
+</html>
